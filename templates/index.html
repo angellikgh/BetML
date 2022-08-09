@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>This is BetML</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./static//dist/output.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="static/public/icons/fav.png">
+    </head>
+    <body class="px-4 md:px-12 lg:px-20 py-12">
+
+
+        <header class="font-sec">
+            <button class="mr-9 md:mr-16 text-sun" onclick="return toggleNav()" type='button' id="toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 md:h-10 md:w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path id="ham" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16"/>
+                </svg>
+            </button>
+            
+            <div>
+                <nav id="nav" class="font-sec md:text-xl fixed -top-full transition-all">
+                    <ul class="mt-1">
+                        <li class="inline mr-4 md:mr-12"><u><a href="">Today's Picks</a></u></li>
+                        <li class="text-sun inline mr-4 md:mr-12"><u><a href="">How good is BetML?</a></u></li>
+                        <li class="inline"><u><a href="">How it works?</a></u></li>
+                    </ul>
+                </nav>
+            </div>  
+        </header>
+
+
+
+        <div id="hero" class="mt-32 md:w-10/12 lg:w-9/12 flex flex-wrap">
+
+            <div id="left">
+                <div class="font-prim text-7xl md:text-8xl lg:text-9xl">This is <u class="decoration-sun">BetML</u></div>
+                <div class="ml-2 md:ml-4 mt-4 md:mt-8 font-sec">
+                    <p class="text-lg md:text-2xl lg:w-9/12">
+                        An NBA and MLB sports betting engine with 300%+ ROI,
+                        <u>powered by machine learning</u>.
+                    </p>
+        
+                    <p class="mt-8 text-lg">We have <span class="text-sun">94 spots</span> remaining.</p>
+        
+                    <div class="mt-16 text-lg">
+                        <button class="inline-block rounded border-black border-2 w-36 h-12 hover:bg-black hover:text-white transition-all">
+                            <p>Get Daily Picks</p>
+                        </button>
+                        <div class="ml-4 md:ml-6 inline-block py-4">or</div>
+                        <button class="ml-4 md:ml-6 inline-block rounded border-black border-2 w-36 h-12 hover:bg-black hover:text-white transition-all">
+                            <p>How it works</p>
+                        </button>
+                        
+                    </div>
+    
+                </div>
+            </div>
+
+
+            
+
+            
+
+        </div>
+
+
+        <div class="ml-4 mt-44 md:mt-16 text-accent text-xs md:text-sm font-sec">
+            Created by Bennett Cohen | Applied Machine Learning & Optimization
+            <br>Masters of Science in Industrial Engineering & Operations Research
+            <br>University of California, Berkeley
+        </div>
+
+
+        <script>
+
+            function toggleNav(){ 
+                var nav = document.getElementById('nav'); 
+                nav.classList.toggle('top-24'); 
+                nav.classList.toggle('-top-full'); 
+
+                var toggleButton = document.getElementById('toggle'); 
+                
+                if (document.getElementById('nav').classList.contains('top-24')){ 
+                    document.getElementById('ham').setAttribute('d', "M6 18L18 6M6 6l12 12"); 
+                }
+
+                else { 
+                    document.getElementById('ham').setAttribute('d', "M4 6h16M4 12h8m-8 6h16")
+                }
+
+                return false
+            }
+            
+
+       </script>
+    </body>
+</html>

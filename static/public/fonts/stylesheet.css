@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Geared Slab';
+    src: url('GearedSlab-Regular.woff2') format('woff2'),
+        url('GearedSlab-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
