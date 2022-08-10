@@ -646,49 +646,12 @@ video {
   position: fixed;
 }
 
-.-left-full {
-  left: -100%;
-}
-
-.top-12 {
-  top: 3rem;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.-left-80 {
-  left: -20rem;
-}
-
-.-left-96 {
-  left: -24rem;
-}
-
-.left-10 {
-  left: 2.5rem;
-}
-
-.top-20 {
-  top: 5rem;
-}
-
-.top-24 {
-  top: 6rem;
-}
-
 .-top-full {
   top: -100%;
 }
 
-.right-0 {
-  right: 0px;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.top-24 {
+  top: 6rem;
 }
 
 .mr-9 {
@@ -747,10 +710,6 @@ video {
   height: 2rem;
 }
 
-.h-14 {
-  height: 3.5rem;
-}
-
 .h-12 {
   height: 3rem;
 }
@@ -759,43 +718,12 @@ video {
   width: 2rem;
 }
 
-.w-48 {
-  width: 12rem;
-}
-
-.w-40 {
-  width: 10rem;
-}
-
 .w-36 {
   width: 9rem;
 }
 
-.rotate-180 {
-  --tw-rotate: 180deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.rotate-90 {
-  --tw-rotate: 90deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-rotate-90 {
-  --tw-rotate: -90deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-wrap {
   flex-wrap: wrap;
-}
-
-.justify-start {
-  justify-content: flex-start;
 }
 
 .rounded {
@@ -826,38 +754,6 @@ video {
   padding-bottom: 1rem;
 }
 
-.pl-20 {
-  padding-left: 5rem;
-}
-
-.pl-16 {
-  padding-left: 4rem;
-}
-
-.pt-16 {
-  padding-top: 4rem;
-}
-
-.pl-0 {
-  padding-left: 0px;
-}
-
-.pl-9 {
-  padding-left: 2.25rem;
-}
-
-.pl-8 {
-  padding-left: 2rem;
-}
-
-.pl-6 {
-  padding-left: 1.5rem;
-}
-
-.pl-4 {
-  padding-left: 1rem;
-}
-
 .font-sec {
   font-family: Lato, serif;
 }
@@ -876,14 +772,14 @@ video {
   line-height: 1.75rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-sun {
@@ -946,21 +842,17 @@ video {
     height: 2.5rem;
   }
 
-  .md\:w-10\/12 {
-    width: 83.333333%;
-  }
-
   .md\:w-10 {
     width: 2.5rem;
+  }
+
+  .md\:w-10\/12 {
+    width: 83.333333%;
   }
 
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
-  }
-
-  .md\:pl-40 {
-    padding-left: 10rem;
   }
 
   .md\:text-xl {
