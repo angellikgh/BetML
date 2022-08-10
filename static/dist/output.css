@@ -782,6 +782,14 @@ video {
   line-height: 1.25rem;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
 .text-sun {
   --tw-text-opacity: 1;
   color: rgb(241 80 37 / var(--tw-text-opacity));
@@ -795,6 +803,18 @@ video {
 .decoration-sun {
   -webkit-text-decoration-color: #F15025;
           text-decoration-color: #F15025;
+}
+
+.decoration-4 {
+  text-decoration-thickness: 4px;
+}
+
+.decoration-1 {
+  text-decoration-thickness: 1px;
+}
+
+.decoration-2 {
+  text-decoration-thickness: 2px;
 }
 
 .transition-all {
