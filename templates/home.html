@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>This is BetML</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./static//dist/output.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="static/public/icons/fav.png">
+        <script src="//code.jquery.com/jquery.min.js"></script>
+    </head>
+    <body class="px-4 md:px-12 lg:px-20 py-12">
+
+        <div id="hero" class="mt-32 md:w-10/12 lg:w-9/12">
+
+            <p class="font-prim text-4xl md:text-5xl md:w-3/5 leading-normal md:leading-normal">
+                Machine learning powered sports betting with <u class="decoration-sun"><span id="roi"></span>% ROI.</u>
+            </p>
+
+            <p class="font-sec text-xl md:text-2xl mt-8 md:w-3/5">
+                This NBA and MLB season, we're giving limited access to BetML's bets. 
+                There are <span class="text-sun">45 spots</span> left. 
+            </p>
+
+            <div class="mt-16 text-lg">
+                <button class="inline-block rounded border-black border-2 w-36 h-12 hover:bg-black hover:text-white transition-all">
+                    Apply to BetML
+                </button>
+                <div class="ml-4 md:ml-6 inline-block py-4">or</div>
+                <button class="ml-4 md:ml-6 inline-block rounded border-black border-2 w-36 h-12 hover:bg-black hover:text-white transition-all">
+                    <p>How it works</p>
+                </button>
+                
+            </div>
+        </div>
+
+
+        <p class="text-xs text-accent fixed bottom-5">
+            Created by <u>Bennett Cohen</u> at the University of California, Berkeley.
+        </p>
+        
+        <script>
+            (function($) {
+                $.fn.jQuerySimpleCounter = function( options ) {
+                    let settings = $.extend({
+                        start:  0,
+                        end:    100,
+                        easing: 'swing',
+                        duration: 400,
+                        complete: ''
+                    }, options );
+
+	            const thisElement = $(this);
+
+                    $({count: settings.start}).animate({count: settings.end}, {
+                        duration: settings.duration,
+                        easing: settings.easing,
+                        step: function() {
+                            let mathCount = Math.ceil(this.count);
+                            thisElement.text(mathCount);
+                        },
+                        complete: settings.complete
+                    });
+                };
+
+            }(jQuery));
+
+            $("#roi").jQuerySimpleCounter({
+                start: 0, 
+                end: 456, 
+                easing: 'swing', 
+                duration: 1000, 
+            })
+        </script>
+    </body>
+</html>

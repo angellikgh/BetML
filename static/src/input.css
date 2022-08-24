@@ -46,3 +46,9 @@
         font-display:auto;font-style:italic;font-weight:500;font-stretch:normal;
         }
 }
+
+input:checked + label {
+	background: black; 
+    color: white;
+}
+
