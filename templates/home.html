@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>This is BetML</title>
+        <title>BetML, the sports betting AI.</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="./static//dist/output.css" rel="stylesheet">
@@ -31,20 +31,23 @@
             
         </header>
 
+        
+
         <div id="hero" class="mt-32 md:w-10/12 lg:w-9/12">
 
             <p class="font-prim text-4xl md:text-5xl md:w-3/5 leading-normal md:leading-normal">
-                Machine learning powered sports betting with <u class="decoration-sun"><span id="roi"></span>% ROI.</u>
+                BetML, the sports betting AI with <u class="decoration-sun"><span id="roi"></span>456% ROI.</u>
             </p>
 
-            <p class="font-sec text-xl md:text-2xl mt-8 md:w-3/5">
-                This NBA and MLB season, we're giving limited access to BetML's bets. 
-                There are <span class="text-sun">45 spots</span> left. 
+            <p class="font-sec text-lg md:text-xl mt-8 md:w-3/5">
+                BetML uses state-of-the-art machine learning to beat Vegas. We're giving limited access to its bets this year. 
+                <br><br>
+                There are <span class="text-sun">56 spots</span> left.
             </p>
 
             <ul class="mt-20 flex text-lg md:text-md">
                 <a href="/quiz">
-                    <li class="w-36 h-12 border-black border-2 rounded  hover:bg-black hover:text-white text-center py-2 cursor-pointer">
+                    <li class="w-36 h-12 border-black border-2 rounded  hover:bg-black hover:text-white text-center py-2 cursor-pointer transition-all">
                         Apply to BetML
                     </li>
                 </a>
@@ -52,7 +55,7 @@
                     or
                 </li>
                 <a href="/about">
-                    <li class="w-36 h-12 border-black border-2 rounded  hover:bg-black hover:text-white text-center py-2 cursor-pointer">
+                    <li class="w-36 h-12 border-black border-2 rounded  hover:bg-black hover:text-white text-center py-2 cursor-pointer transition-all">
                         How it works?
                     </li>
                 </a>
@@ -60,11 +63,12 @@
 
         </div>
 
+
         <footer class="text-xs text-accent fixed bottom-10 md:bottom-5">
             Created by <u>Bennett Cohen</u> at the University of California, Berkeley.
         </footer>
 
-        <script>
+        <!-- <script>
             (function($) {
                 $.fn.jQuerySimpleCounter = function( options ) {
                     let settings = $.extend({
@@ -91,36 +95,47 @@
             }(jQuery));
 
             $("#roi").jQuerySimpleCounter({
-                start: 200, 
+                start: 250, 
                 end: 456, 
                 easing: 'swing', 
                 duration: 2000, 
             })
 
+            
+        </script> -->
+
+        <script>
+            setTimeout(function(){
+    odometer.innerHTML = 986;
+}, 100);
+        </script>
+
+
+        <script>
             function toggleNav(){ 
 
-                if (window.innerWidth < 768){
-                    document.getElementById('nav').classList.toggle('-left-full'); 
-                    document.getElementById('nav').classList.toggle('left-20')
-                }  
-                else{
-                    document.getElementById('nav').classList.toggle('-left-full'); 
-                document.getElementById('nav').classList.toggle('left-40')
-                }  
-                
+if (window.innerWidth < 768){
+    document.getElementById('nav').classList.toggle('-left-full'); 
+    document.getElementById('nav').classList.toggle('left-20')
+}  
+else{
+    document.getElementById('nav').classList.toggle('-left-full'); 
+document.getElementById('nav').classList.toggle('left-40')
+}  
 
-                
 
-                if (document.getElementById('nav').classList.contains('left-20')){ 
-                    document.getElementById('ham').setAttribute('d', "M6 18L18 6M6 6l12 12"); 
-                }
 
-                else { 
-                    document.getElementById('ham').setAttribute('d', "M4 6h16M4 12h16m-7 6h7")
-                }
 
-                return false
-            }
+if (document.getElementById('nav').classList.contains('left-20')){ 
+    document.getElementById('ham').setAttribute('d', "M6 18L18 6M6 6l12 12"); 
+}
+
+else { 
+    document.getElementById('ham').setAttribute('d', "M4 6h16M4 12h16m-7 6h7")
+}
+
+return false
+}
         </script>
     </body>
 </html>

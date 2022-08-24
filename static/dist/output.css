@@ -642,6 +642,40 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -828,6 +862,10 @@ video {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-48 {
+  width: 12rem;
 }
 
 .cursor-pointer {
@@ -1045,6 +1083,10 @@ input:checked + label {
 
   .md\:w-10\/12 {
     width: 83.333333%;
+  }
+
+  .md\:w-3\/4 {
+    width: 75%;
   }
 
   .md\:px-12 {
