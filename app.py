@@ -11,6 +11,10 @@ templates = Jinja2Templates(directory="templates")
 def home(request: Request): 
     return templates.TemplateResponse("home.html", {"request": request})
 
-@app.get("/apply")
+@app.get("/quiz")
 def apply(request: Request): 
-    return templates.TemplateResponse("apply.html", {"request": request})
+    return templates.TemplateResponse("quiz.html", {"request": request})
+
+@app.get("/about")
+def about(request: Request): 
+    return templates.TemplateResponse("about.html", {"request": request})

@@ -642,46 +642,24 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
-.invisible {
-  visibility: hidden;
-}
-
 .fixed {
   position: fixed;
+}
+
+.-left-full {
+  left: -100%;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.left-20 {
+  left: 5rem;
+}
+
+.left-40 {
+  left: 10rem;
 }
 
 .-top-full {
@@ -692,64 +670,16 @@ video {
   top: 6rem;
 }
 
-.bottom-5 {
-  bottom: 1.25rem;
+.mt-32 {
+  margin-top: 8rem;
 }
 
-.-right-full {
-  right: -100%;
+.mt-8 {
+  margin-top: 2rem;
 }
 
-.right-0 {
-  right: 0px;
-}
-
-.-right-0 {
-  right: -0px;
-}
-
-.left-10 {
-  left: 2.5rem;
-}
-
-.left-20 {
-  left: 5rem;
-}
-
-.left-60 {
-  left: 15rem;
-}
-
-.left-40 {
-  left: 10rem;
-}
-
-.-left-full {
-  left: -100%;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.left-32 {
-  left: 8rem;
-}
-
-.left-28 {
-  left: 7rem;
-}
-
-.left-24 {
-  left: 6rem;
-}
-
-.bottom-10 {
-  bottom: 2.5rem;
-}
-
-.z-40 {
-  z-index: 40;
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .mr-9 {
@@ -764,24 +694,12 @@ video {
   margin-right: 1rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mt-32 {
-  margin-top: 8rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
 }
 
 .mt-16 {
@@ -796,18 +714,6 @@ video {
   margin-top: 11rem;
 }
 
-.mr-40 {
-  margin-right: 10rem;
-}
-
-.ml-40 {
-  margin-left: 10rem;
-}
-
-.mr-20 {
-  margin-right: 5rem;
-}
-
 .inline-block {
   display: inline-block;
 }
@@ -820,10 +726,6 @@ video {
   display: flex;
 }
 
-.hidden {
-  display: none;
-}
-
 .h-8 {
   height: 2rem;
 }
@@ -832,40 +734,16 @@ video {
   height: 3rem;
 }
 
-.h-96 {
-  height: 24rem;
-}
-
-.h-6 {
-  height: 1.5rem;
-}
-
 .w-8 {
   width: 2rem;
-}
-
-.w-24 {
-  width: 6rem;
-}
-
-.w-2\/4 {
-  width: 50%;
 }
 
 .w-36 {
   width: 9rem;
 }
 
-.w-56 {
-  width: 14rem;
-}
-
-.w-6 {
-  width: 1.5rem;
-}
-
-.w-48 {
-  width: 12rem;
+.w-24 {
+  width: 6rem;
 }
 
 .cursor-pointer {
@@ -880,19 +758,9 @@ video {
   flex-wrap: wrap;
 }
 
-.gap-x-8 {
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
-}
-
 .gap-x-10 {
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
-}
-
-.gap-x-5 {
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
 }
 
 .rounded {
@@ -906,11 +774,6 @@ video {
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
-.bg-rose-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(244 63 94 / var(--tw-bg-opacity));
 }
 
 .px-4 {
@@ -950,11 +813,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -980,12 +838,12 @@ video {
   line-height: 1.25rem;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
 .font-semibold {
   font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .leading-normal {
@@ -1029,14 +887,6 @@ input:checked + label {
 }
 
 @media (min-width: 768px) {
-  .md\:left-60 {
-    left: 15rem;
-  }
-
-  .md\:left-80 {
-    left: 20rem;
-  }
-
   .md\:bottom-5 {
     bottom: 1.25rem;
   }
@@ -1069,24 +919,16 @@ input:checked + label {
     height: 2.5rem;
   }
 
-  .md\:w-10 {
-    width: 2.5rem;
+  .md\:w-10\/12 {
+    width: 83.333333%;
   }
 
   .md\:w-3\/5 {
     width: 60%;
   }
 
-  .md\:w-2\/4 {
-    width: 50%;
-  }
-
-  .md\:w-10\/12 {
-    width: 83.333333%;
-  }
-
-  .md\:w-3\/4 {
-    width: 75%;
+  .md\:w-10 {
+    width: 2.5rem;
   }
 
   .md\:px-12 {
@@ -1094,24 +936,24 @@ input:checked + label {
     padding-right: 3rem;
   }
 
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 
-  .md\:text-5xl {
-    font-size: 3rem;
+  .md\:text-8xl {
+    font-size: 6rem;
     line-height: 1;
   }
 
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .md\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
   }
 
   .md\:text-sm {

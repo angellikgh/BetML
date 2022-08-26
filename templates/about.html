@@ -13,9 +13,8 @@
               domain: 'betml.outseta.com'
             };
           </script>
-          <script src="https://cdn.outseta.com/outseta.min.js"
-                  data-options="o_options">
-          </script>
+          <script src="https://cdn.outseta.com/outseta.min.js" data-options="o_options"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     </head>
     <body class="px-4 md:px-12 lg:px-20 py-12">
 
@@ -46,38 +45,10 @@
             
         </header>
 
+        <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
         
 
-        <div id="hero" class="mt-32 md:w-10/12 lg:w-9/12">
-
-            <p class="font-prim text-4xl md:text-5xl md:w-3/5 leading-normal md:leading-normal">
-                BetML, the sports betting AI with <u class="decoration-sun"><span id="roi"></span>456% ROI.</u>
-            </p>
-
-            <p class="font-sec text-lg md:text-xl mt-8 md:w-3/5">
-                BetML uses state-of-the-art machine learning to beat Vegas. We're giving limited access to its bets this year. 
-                <br><br>
-                There are <span class="text-sun">56 spots</span> left.
-            </p>
-
-            <ul class="mt-20 flex text-lg md:text-md">
-                <a href="/quiz">
-                    <li class="w-36 h-12 border-black border-2 rounded  hover:bg-black hover:text-white text-center py-2 cursor-pointer transition-all">
-                        Join Now
-                    </li>
-                </a>
-                <li class="w-24 h-12 text-center py-2">
-                    or
-                </li>
-                <a href="/about">
-                    <li class="w-36 h-12 border-black border-2 rounded  hover:bg-black hover:text-white text-center py-2 cursor-pointer transition-all">
-                        How it works?
-                    </li>
-                </a>
-            </ul>
-
-        </div>
-
+        
 
         <footer class="text-xs text-accent fixed bottom-10 md:bottom-5">
             Created by <u>Bennett Cohen</u> at the University of California, Berkeley.
@@ -85,5 +56,6 @@
 
 
         <script src="/static/src/js/nav.js"></script>
+        <script src="/static/src/js/plot.js"></script>
     </body>
 </html>

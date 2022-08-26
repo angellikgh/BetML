@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Apply to BetML</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/static//dist/output.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="static/public/icons/fav.png">
+        <script>
+            var o_options = {
+              domain: 'betml.outseta.com'
+            };
+          </script>
+          <script src="https://cdn.outseta.com/outseta.min.js"
+                  data-options="o_options">
+          </script>
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    </head>
+    <body class="px-4 md:px-12 lg:px-20 py-12">
+
+
+        
+
+        <div class="font-sec text-lg md:text-xl mt-8 md:w-3/5" id="quiz-text"></div>
+        
+
+        <!-- <div class="font-sec md:text-xl text-lg">
+            <p class="font-sec mt-8 md:w-3/5">
+                BetML isn't an ordinary betting model. It took over two years to develop it at the University of California, Berkeley, 
+                and we are currently conducting academic research to continuously improve its performance. 
+            </p>
+    
+            <p class="font-sec mt-8 md:w-3/5">
+                Because of this, we limit access to BetML to only certain bettors (or groups of bettors). 
+                If you casually bet $20 on a game every few weeks, you're not someone who would gain value from BetML. <span class="text-sun"><a href="">Why not?</a></span>
+            </p>
+    
+            <p class="font-sec font-bold mt-8 md:w-3/5">Please answer the five questions below.</p>
+    
+        </div> -->
+
+
+
+
+        <script>
+            var app = document.getElementById('quiz-text');
+            var typewriter = new Typewriter(app, {
+                loop: false, 
+                delay: 1
+            });
+            
+            typewriter.typeString("BetML isn't an ordinary betting model. It took over two years to develop it at the University of California, Berkeley, and we are currently conducting academic research to continuously improve its performance. ")
+            .pauseFor(2500)
+            .typeString('<br><br>')
+            .typeString("Because of this, we limit access to BetML to only certain bettors (or groups of bettors). If you casually bet $20 on a game every few weeks, you're not someone who would gain value from BetML. <span class='text-sun'><a href=''>Why not?</a></span>")
+            .pauseFor(2500)
+            .typeString('<p class="font-bold"><br><br>Please answer the five questions below. It should take less than 60 seconds</p>')
+            .start();
+            document.querySelectorAll(".typed-cursor")[0].style.display = "none";
+        </script>
+
+        
+
+        
+
+
+        <script src="/static/src/js/nav.js"></script>
+    </body>
+</html>
